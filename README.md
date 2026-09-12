@@ -25,7 +25,7 @@ The robot uses an **ATmega328P** as its main controller and an **ESP8266-01 (ESP
 
 ## System Overview
 
-![FireBOT block diagram](hardware\block_digram.png)
+![FireBOT block diagram](hardware/block_digram.png)
 
 The ATmega328P acts as the central controller. Sensor inputs are processed by the microcontroller, which controls the motors, pump, servo and buzzer. The ESP-01 provides the wireless link to the Blynk application.
 
@@ -61,15 +61,15 @@ The Blynk application can be used to send movement, pump and nozzle-related comm
 - Buzzer
 - Custom PCB
 
-See the complete bill of materials in [`hardware/BOM.md`](hardware\bill_of_materials.png).
+See the complete bill of materials in [`hardware/BOM.md`](hardware/bill_of_materials.png).
 
 ## Circuit Diagram
 
-![FireBOT circuit diagram](hardware\circuit_schematic.png)
+![FireBOT circuit diagram](hardware/circuit_schematic.png)
 
 ## The Prototype
 
-![Working FireBOT prototype](hardware\firebot_prototype.png)
+![Working FireBOT prototype](hardware/firebot_prototype.png)
 
 The photograph above is taken from the original diploma project report and shows the assembled four-wheel FireBOT with its flame sensors, electronics and ESP-01 module.
 
@@ -77,15 +77,15 @@ The photograph above is taken from the original diploma project report and shows
 
 The original project included PCB layout and physical PCB fabrication as part of the hardware work.
 
-![PCB fabrication top layer](hardware\pcb_top.png)
-![PCB fabrication bottem layer](hardware\pcb_bottom.png)
+![PCB fabrication top layer](hardware/pcb_top.png)
+![PCB fabrication bottem layer](hardware/pcb_bottom.png)
 
 ## Software
 
 The source code is split into two sketches:
 
-- [`src/FireBOT_ATmega.ino`](src\FireBOT_ATmega\FireBOT_ATmega.ino) — robot control and automatic fire logic
-- [`src/FireBOT_ESP01.ino`](src\FireBOT_ESP01\FireBOT_ESP01.ino) — Blynk/Wi-Fi bridge and mobile controls
+- [`src/FireBOT_ATmega.ino`](src\FireBOT_ATmega/FireBOT_ATmega.ino) — robot control and automatic fire logic
+- [`src/FireBOT_ESP01.ino`](src\FireBOT_ESP01/FireBOT_ESP01.ino) — Blynk/Wi-Fi bridge and mobile controls
 
 The original project used the Arduino IDE and Blynk IoT.
 
