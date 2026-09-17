@@ -9,6 +9,8 @@ The robot uses an **ATmega328P** as its main controller and an **ESP8266-01 (ESP
 > **Project status:** Working diploma-project prototype.
 >
 > **Safety:** FireBOT is an educational prototype, not certified firefighting or life-safety equipment. Do not rely on it for real emergency response.
+![FireBOT](images/firebot.jpeg)
+
 
 ## Features
 
